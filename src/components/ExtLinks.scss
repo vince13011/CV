@@ -1,0 +1,21 @@
+.links{
+
+    &__list{
+        
+        line-height: 1rem;
+        font-weight: 800;
+        
+        &__link{
+            
+            font-weight: normal;
+            
+
+            &:hover{
+                color: red;
+            }
+
+        }
+
+    }
+
+    }

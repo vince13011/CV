@@ -1,0 +1,115 @@
+
+@use 'src/styles/vars';
+
+.header{
+    margin-top: vars.$gutter;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+    &__presentation{
+        box-sizing: border-box;
+        width: 90%;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:center;
+        margin: auto;
+        padding-bottom: vars.$gutter;
+
+        
+
+        
+        &__image{
+            margin-top: vars.$gutter;
+            margin-left:1rem;
+            width: 100%;
+        
+        }
+
+        &__title{
+            align-self:flex-end;
+            width: 45%;
+            display: flex;
+            flex-direction:column;
+            flex-wrap: wrap;
+            justify-content:flex-start;
+            text-align: center;
+            font-size: 1.4rem;
+            
+
+            &__job{
+
+                color: vars.$title-color;
+            }
+            &__name{
+                
+                margin-bottom: 1rem;
+            }
+
+            .links{
+                font-size:1rem;
+                }
+        }
+
+
+        
+
+        
+    }
+
+        .header__nav{
+            width: 90%;
+            margin:auto;
+            box-shadow: 0px 10px 13px -7px vars.$primary-color;
+            box-sizing: border-box;
+            display:flex;
+            flex-direction:row;
+            flex-wrap: nowrap;
+            justify-content:center;
+            height:6rem;
+            padding-top:2rem;
+        
+        
+        &link {
+            
+            box-sizing: border-box;
+            border-collapse: collapse;
+            border-left: 1px solid vars.$primary-color;
+            border-right: 1px solid vars.$primary-color;
+            padding-left: vars.$gutter;
+            padding-right: vars.$gutter;
+            text-align: center;
+            transition: 0.2s;
+            height:60%;
+            padding-top:0.3rem;
+            font-size: 1.2rem;
+            
+            &:first-child{
+                border-left: none;
+            }
+
+            &:last-child{
+                border-right: none;
+            }
+
+            &:hover {
+                
+                font-size: 1.4rem;
+                color: vars.$primary-color;
+                            
+                    }
+
+            a {
+                margin-top: 3rem;
+            }
+        }
+
+        
+        
+        }
+        
+ }

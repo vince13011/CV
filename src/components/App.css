@@ -1,0 +1,15 @@
+@use 'src/styles/index.scss';
+
+.app {
+  width: 100%;
+  margin: 1em auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content:space-evenly;
+}
+
+.app img {
+  max-width: 200px;
+}

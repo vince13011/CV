@@ -1,0 +1,30 @@
+@use 'src/styles/index.scss';
+@use 'src/styles/vars';
+
+.contact{
+    width: 20%;
+    text-align: left;
+    align-self: flex-end;
+ 
+    &__title{
+        font-weight:900;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        font-weight:bold;
+        line-height: 1rem;
+        margin-top: 0.5rem;
+
+        &__content{
+            font-weight:normal; 
+
+            span{
+                margin-left:-1.9rem;
+            }
+        }
+    }
+
+}

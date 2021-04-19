@@ -1,0 +1,47 @@
+@use 'reset';
+@use 'vars';
+
+body {
+  font-family: vars.$global-font;
+  font-weight: vars.$global-font-weight;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: vars.$title-font;
+  font-weight: vars.$title-font-weight;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h4 {
+  font-family: vars.$title-font;
+  font-weight:500;
+  font-size: 1.2rem;
+}
+
+.btn {
+  margin: vars.$gutter auto;
+  display: block;
+  padding: vars.$gutter / 2;
+  text-transform: uppercase;
+  border: 0;
+  &.btn-primary {
+    background-color: vars.$primary-color;
+    color: vars.$light-color;
+  }
+  
+}
+
+main{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+}

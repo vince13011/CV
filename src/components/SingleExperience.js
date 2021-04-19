@@ -1,0 +1,23 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import propTypes from 'prop-types';
+import styles from './SingleExperience.scss';
+
+
+const SingleExperience = ({ experiences }) => {
+    return (
+        <Link className="post" to={`/categories/experiences`}>
+            <h4 className="post__title">Expériences</h4>
+
+                {experiences.map((experience) =>
+                    <ul className="post__container" key={experience.id}>
+                        <li className="post__content">{experience.job}</li>
+                        <li className="post__content">{experience.society}</li>
+                        <li className="post__content">{experience.date}</li>
+                    </ul>
+                )} 
+        </Link>
+    )
+}
+
+export default SingleExperience

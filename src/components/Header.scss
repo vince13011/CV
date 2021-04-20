@@ -24,7 +24,7 @@
 
         
         &__image{
-            margin-top: vars.$gutter;
+            
             margin-left:1rem;
             width: 100%;
         
@@ -112,4 +112,107 @@
         
         }
         
+ }
+
+ @media screen and (max-width:500px) {
+ 
+    .header{
+        
+        margin-top: 0.5rem;
+    
+        &__presentation{
+        
+            width: 100%;
+            max-height: 440px;
+            margin: 0 0 0  0.5rem;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content:flex-start;
+            padding-bottom: 1rem;
+    
+            &__image{
+                margin-top: 0;
+            
+            }
+
+            &__title{
+                margin-top: 1rem;
+          text-align:start;
+          width: 100%;
+          order:3;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction:row;
+          flex-wrap: wrap;
+          justify-content:center;
+                
+    
+                &__job{
+    
+                    font-size: 1.2rem;
+              width:213px;
+              align-self: flex-start;
+              text-align: start;
+                   
+                }
+                &__name{
+                    
+                    font-size: 1.2rem;
+                    width: 112px;
+                    align-self: flex-end;
+                    text-align: end;
+                }
+    
+                .links{
+                    font-size: 0.8rem;
+          margin-top: 0.5rem;
+                    }
+            }
+    
+    
+            
+    
+            
+        }
+    
+            .header__nav{
+                width: 100%;
+                margin:auto;
+                box-shadow: 0px 10px 13px -7px vars.$primary-color;
+                box-sizing: border-box;
+                display:flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                justify-content:center;
+                height: 100%;
+            
+            
+                &link {
+                    
+                    box-sizing: border-box;
+                    border-collapse: collapse;
+                    border-left: 1px solid vars.$primary-color;
+                    border-right: 1px solid vars.$primary-color;
+                    padding-left: 0.15rem ;
+                    padding-right: 0.15rem;
+                    text-align: center;
+                    transition: 0.2s;
+                    height:60%;
+                    padding-top:0.3rem;
+                    font-size: 0.7rem;
+
+                    &:hover {
+                
+                        font-size: 0.9rem;
+                        
+                                    
+                            }
+                }
+    
+            
+            
+            }
+            
+     }
  }

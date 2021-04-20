@@ -8,11 +8,11 @@ return(
 
     <ul className="links">
         <li className="links__list">
-        <p>Mes projets sur mon profil GitHub</p>
+        <p>Mes projets sur GitHub</p>
         <ExternalLink className="links__list__link" href="https://github.com/vince13011"></ExternalLink>
         </li>
         <li className="links__list">
-        <p>Plus d'informations sur mon profil LinkedIn</p>
+        <p>Plus d'informations sur LinkedIn</p>
         <ExternalLink className="links__list__link" href="https://www.linkedin.com/in/vincentgiglio/"></ExternalLink>
         </li>
     </ul>

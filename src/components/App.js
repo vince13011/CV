@@ -10,9 +10,6 @@ import Home from './Home';
 import CategoryPage from './CategoryPage';
 import QualificationPage from './QualificationPage';
 import ExperiencePage from './ExperiencePage';
-
-
-
 import getAssetsByCategory from '../selectors/getAssetsByCategory';
 import requestApi from '../axios/requestApi';
 

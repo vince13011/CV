@@ -2,10 +2,12 @@
 @use 'src/styles/vars';
 
 .contact{
-    padding-left: 11rem;
-    width: 30%;
+    
+    width: 25%;
     text-align: left;
-    align-self: flex-end;
+    margin-left:10%;
+    align-self: center;
+    
  
     &__title{
         font-weight:900;
@@ -20,13 +22,14 @@
         margin-top: 0.5rem;
         text-align: left;
 
-        &__title{
-        width: 100%;
-        color:#d7b07f;
+        &__icon{
+        width: 8%;
+        text-align: left;
         }
 
         &__content{
             font-weight:normal; 
+            margin-left: 0.5rem;
             
         }
     }

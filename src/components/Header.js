@@ -11,15 +11,13 @@ const Header = ({ categories }) => {
   return (
     <header className="header">
       <div className="header__presentation">
-      <img className="header__presentation__image" src={CVPicture} alt="photo CV" />
-        <div className="header__presentation__title">
-          <h1 className="header__presentation__title__job">Développeur Web <br/>Full Stack </h1>
-          <h2 className="header__presentation__title__name">Vincent Giglio <br/>26 ans</h2>
-          
+        <div className="header__presentation__portrait">
+          <img className="header__presentation__portrait__image" src={CVPicture} alt="photo CV" />
+          <h2 className="header__presentation__portrait__name">Vincent Giglio <br/>26 ans</h2>
+         </div>
+         <h1 className="header__presentation__title">Développeur Web <br/>Full Stack </h1>
           <ExtLinks className="extlinks"/>
-        </div>
-        <Contact/>
-        
+        <Contact className="contact"/> 
       </div>
       <nav>
         <ul className="header__nav">

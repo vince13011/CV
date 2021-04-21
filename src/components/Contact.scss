@@ -2,6 +2,7 @@
 @use 'src/styles/vars';
 
 .contact{
+    padding-left: 11rem;
     width: 30%;
     text-align: left;
     align-self: flex-end;
@@ -21,6 +22,7 @@
 
         &__title{
         width: 100%;
+        color:#d7b07f;
         }
 
         &__content{
@@ -33,6 +35,7 @@
 
 @media screen and (max-width:500px) {
     .contact{
+        padding-left: 0;
         width: 64%;
         align-self: flex-start;
         margin: 0;

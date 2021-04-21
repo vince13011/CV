@@ -12,21 +12,16 @@
     box-shadow: 2px 2px 6px 2px vars.$alt-color;
     transition: 0.2s;
 
-    &:hover{
-       
-        box-shadow: 2px 2px 6px 2px vars.$primary-color;
-
-    }
+    
     &__container{
         box-sizing: border-box;
         display: flex;
-        justify-content:center;
+        justify-content:flex-start;
         flex-direction:row;
         flex-wrap: wrap;
         border-collapse: collapse;
         border-top: 2px solid vars.$primary-color;
-        margin-left:1rem;
-        margin-right: 1rem;
+        padding-left: 12rem;
         
     }
    
@@ -42,9 +37,29 @@
 
     &__content{
         
-        width: 100%;
+        width: 40%;
         font-size: 1.7rem;
-        margin: auto;
+        
         
     }
+}
+
+@media screen and (max-width:500px) {
+
+    .post{
+
+    
+        
+        &__container{
+
+            padding-left: 0;
+        }
+       
+        &__content{
+            
+            padding-left: 2rem;
+            
+        }
+    }
+
 }

@@ -2,13 +2,14 @@
 @use 'src/styles/vars';
 
 .header{
-    margin-top: vars.$gutter;
+    padding-top: vars.$gutter;
     box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
     justify-content:space-evenly;
+    background-color: vars.$alt-color;
 
     &__presentation{
         box-sizing: border-box;
@@ -18,6 +19,7 @@
         flex-wrap: wrap;
         justify-content:center;
         margin: auto;
+        color:vars.$title-color;
         padding-bottom: vars.$gutter;
 
         
@@ -25,8 +27,9 @@
         
         &__image{
             
-            margin-left:1rem;
-            width: 100%;
+            
+            width: 25%;
+            
         
         }
 
@@ -42,8 +45,8 @@
             
 
             &__job{
-
-                color: vars.$title-color;
+                
+                
             }
             &__name{
                 
@@ -64,7 +67,6 @@
         .header__nav{
             width: 90%;
             margin:auto;
-            box-shadow: 0px 10px 13px -7px vars.$primary-color;
             box-sizing: border-box;
             display:flex;
             flex-direction:row;
@@ -78,8 +80,8 @@
             
             box-sizing: border-box;
             border-collapse: collapse;
-            border-left: 1px solid vars.$primary-color;
-            border-right: 1px solid vars.$primary-color;
+            border-left: 1px solid vars.$light-color;
+            border-right: 1px solid vars.$light-color;
             padding-left: vars.$gutter;
             padding-right: vars.$gutter;
             text-align: center;
@@ -87,6 +89,8 @@
             height:60%;
             padding-top:0.3rem;
             font-size: 1.2rem;
+            color: vars.$light-color;
+            
             
             &:first-child{
                 border-left: none;
@@ -99,7 +103,7 @@
             &:hover {
                 
                 font-size: 1.4rem;
-                color: vars.$primary-color;
+                color: vars.$hover-color;
                             
                     }
 
@@ -118,13 +122,13 @@
  
     .header{
         
-        margin-top: 0.5rem;
+        margin-top: -1.5rem;
     
         &__presentation{
         
             width: 100%;
             max-height: 440px;
-            margin: 0 0 0  0.5rem;
+            margin: 0;
             display: flex;
             flex-direction:row;
             flex-wrap: wrap;

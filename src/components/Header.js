@@ -4,7 +4,7 @@ import styles from './Header.scss';
 import Menu from './Menu';
 import Contact from './Contact';
 import ExtLinks from './ExtLinks';
-import CVPicture from '../assets/cartoonSticker.jpg';
+import CVPicture from '../assets/stickerCV.png';
 
 const Header = ({ categories }) => {
 

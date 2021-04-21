@@ -8,4 +8,14 @@
     flex-wrap: wrap;
     justify-content:space-evenly;
     margin:auto; 
+    
+}
+
+@media screen and (max-width:500px) {
+
+    .content{
+        width: 100%;
+
+}
+
 }

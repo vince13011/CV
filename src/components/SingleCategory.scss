@@ -3,13 +3,14 @@
 .post{
 
     box-sizing: border-box;
-    width:  90%;
+    width:  82%;
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-top: vars.$gutter ;
-    box-shadow: 2px 2px 6px 2px vars.$alt-color;
+    margin: vars.$gutter auto  vars.$gutter 18%;
+    background-color: vars.$title-color;
+    border:3px solid vars.$alt-color;
     transition: 0.2s;
 
     
@@ -21,7 +22,7 @@
         flex-wrap: wrap;
         border-collapse: collapse;
         border-top: 2px solid vars.$primary-color;
-        padding-left: 12rem;
+        padding-left: 7rem;
         
     }
    
@@ -37,10 +38,8 @@
 
     &__content{
         
-        width: 40%;
-        font-size: 1.7rem;
-        
-        
+        width: 30%;
+        font-size: 1.5rem;
     }
 }
 

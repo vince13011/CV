@@ -16,6 +16,11 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
     return (
         <>
             <Header categories={categories} />
+            <nav>
+                <ul className="header__nav">
+                    <Menu key={categories} categories={categories} />
+                </ul>
+            </nav>
             <main className="content">
                 {categories.map((category) => {
                     const filteredAssets = getAssetsByCategory(assets, category);

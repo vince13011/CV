@@ -19,11 +19,6 @@ const Header = ({ categories }) => {
           <ExtLinks className="extlinks"/>
         <Contact className="contact"/> 
       </div>
-      <nav>
-        <ul className="header__nav">
-          <Menu key={categories} categories={categories} />
-        </ul>
-      </nav>
     </header>
   );
 };

@@ -1,11 +1,12 @@
 @use 'src/styles/vars';
 
 nav{
-    z-index: 100;
-    position: fixed;
-    float:left;
+    background-color: vars.$title-color ;
     width: 20%;
-    margin-top: 19%;
+    height: 577px;
+    position: sticky;
+    top: 0;
+    border-right: 3px solid vars.$alt-color !important;
 
     
     .header__nav{
@@ -30,7 +31,9 @@ nav{
     transition: 0.2s;
     padding-top: 1.7rem;
     font-size: 1.2rem;
-    color: vars.$primary-color ;
+    border-bottom: 2px solid vars.$alt-color;
+    margin-left: 0.7rem;
+    
 
             
             

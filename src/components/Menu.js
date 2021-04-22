@@ -2,7 +2,9 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import propTypes from 'prop-types';
-import styles from './Header.scss';
+import './Header.scss';
+import './Menu.scss';
+
 
 
 
@@ -11,13 +13,13 @@ const Menu = ({ categories }) => {
 
   return (
     <>
-      <li key='Acceuil' className="header__navlink">
+      <li key='Accueil' className="header__navlink">
         <NavLink
           
           to={`/`}
           exact
         >
-          Acceuil
+          Accueil
           </NavLink>
       </li>
       <li key='Expériences' className="header__navlink">

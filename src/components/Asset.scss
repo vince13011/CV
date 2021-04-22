@@ -4,18 +4,21 @@
 .asset{
 
     box-sizing: border-box;
-    width:  60%;
+    width: 80%;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-top: vars.$gutter ;
-    box-shadow: 2px 2px 6px 2px vars.$alt-color;;
+    margin-top: 2%;
+    margin-left: 20%;
+    background-color: #e2cfb9;
+    border: 3px solid #789c79;
     transition: 0.2s;
+
 
     &:hover{
        
-        box-shadow: 2px 2px 6px 2px vars.$primary-color;
+       /* box-shadow: 2px 2px 6px 2px vars.$alt-color; */
 
     }
     

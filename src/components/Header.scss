@@ -19,7 +19,7 @@
         justify-content:flex-start;
         
         color:vars.$title-color;
-        padding-bottom: vars.$gutter;
+        padding-bottom: 0.5rem;
         
 
         &__portrait{
@@ -43,6 +43,10 @@
                 margin-top: -7%;
                 margin-left: -20%;
             }
+            
+            .links{
+                
+                }
 
         }
 
@@ -58,16 +62,13 @@
             text-align: start;
             font-size: 4rem;
             padding-left: 5%;
+            margin-bottom: -1%;
             
 
             }
             
 
-            .links{
-                order: 4;
-                font-size:1rem;
-                margin-left: -2%;
-                }
+            
 
             .contact{
                 order:3;

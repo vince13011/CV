@@ -23,6 +23,7 @@
         border-collapse: collapse;
         border-top: 2px solid vars.$primary-color;
         padding-left: 7rem;
+        padding-top: 1rem;
         
     }
    
@@ -37,9 +38,9 @@
     }
 
     &__content{
-        
         width: 30%;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        align-self: center;
     }
 }
 

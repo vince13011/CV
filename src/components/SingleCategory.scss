@@ -48,7 +48,9 @@
 
     .post{
 
-    
+        width: 65%;
+        margin-left: 8.2rem;
+        margin-top:1rem;
         
         &__container{
 
@@ -57,8 +59,10 @@
        
         &__content{
             
-            padding-left: 2rem;
-            
+            padding-left: 0.5rem;
+            width: 50%;
+            font-size: 1rem;
+        
         }
     }
 

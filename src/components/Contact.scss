@@ -24,7 +24,10 @@
 
         &__icon{
         width: 8%;
+        max-width: 2rem;
         text-align: left;
+        max-height:1rem ;
+        
         }
 
         &__content{
@@ -39,26 +42,41 @@
 @media screen and (max-width:500px) {
     .contact{
         padding-left: 0;
-        width: 64%;
-        align-self: flex-start;
-        margin: 0;
+        width: 100%;
+        margin-left: 4rem;
+        
 
         &__title{
-            font-size: 1rem;  
+            font-size: 1rem; 
+            text-align: center; 
+            text-transform: uppercase;
+            margin-left: -1rem;
         }
 
         ul{
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            height: 5rem;
+            flex-wrap: nowrap;
+            justify-content: center;
+    
+        }
         
-        }
-        &__list{
-            font-size: 0.8rem;
-            line-height: 0.8rem;
-        }
+            &__list{
+                text-align: left;
+                font-size: 1rem;
+                line-height: 1rem;
+                flex-wrap: nowrap;
+
+                &__icon{
+
+                    width: 1.5rem;
+                    max-width: 2rem;
+                    max-height: 2rem;
+                    }
+                &__content{
+                    padding-left: 0.3rem;
+                }
+            }
 
     }
 

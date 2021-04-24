@@ -1,0 +1,27 @@
+@use 'src/styles/vars';
+@media screen and (max-width:500px) {
+
+    .post{
+
+        
+        &__container{
+
+            justify-content:space-between;
+            text-align: start;
+            
+            
+        }
+
+        &__content{
+            
+            width: 7rem;
+
+            &:first-child{
+                padding-left: 0.5rem;
+            }
+            &:last-child{
+                margin-left: 5.5rem;
+            }
+        }
+    }
+}

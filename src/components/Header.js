@@ -1,10 +1,10 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import styles from './Header.scss';
-import Menu from './Menu';
 import Contact from './Contact';
 import ExtLinks from './ExtLinks';
 import CVPicture from '../assets/stickerCV.png';
+import './Contact.scss'
+import './Header.scss';
 
 const Header = ({ categories }) => {
 

@@ -61,35 +61,15 @@
 
     .asset{
 
-        box-sizing: border-box;
-        width:  90%;
-        display: flex;
-        flex-direction:column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        margin-top: 1rem ;
-        box-shadow: 2px 2px 6px 2px vars.$alt-color;
-        transition: 0.2s;
-    
-        &:hover{
-           
-            box-shadow: 2px 2px 6px 2px vars.$primary-color;
-    
-        }
+        width: 65%;
+        margin-left: 7.5rem;
+        margin-top:1rem;
         
         
         &__container{
-            box-sizing: border-box;
-            display: flex;
-            justify-content:flex-start;
-            flex-direction:row;
-            flex-wrap: wrap;
-            border-collapse: collapse;
-            border-top: 2px solid vars.$primary-color;
-            margin-left: 0.5rem;
-            margin-right: 0.5rem;
-            padding-bottom: 1rem;
             
+            padding-left: 0;
+
         }
        
        

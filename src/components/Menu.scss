@@ -64,7 +64,7 @@ nav{
 
 
     nav{
-        height: 491px;
+        
         width: 30%;
         .header__nav{
             
@@ -73,7 +73,7 @@ nav{
             &link {
                 width: 100%;
                 padding-left: 0.5rem;
-                padding-top: 1rem;
+                padding-top: 2.3rem;
                 font-size: 1rem;
                 margin-left: 0;
                 text-align: left;
@@ -83,8 +83,13 @@ nav{
                 }
 
                 &:hover {
-            
-                                
+                    font-size: 1.1rem;
+                            
+                }
+
+                &:first-child{
+                
+                    margin-top: 1rem;
                 }
             }
         }

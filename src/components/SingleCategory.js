@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import propTypes from 'prop-types';
-import styles from './SingleCategory.scss';
+import './SingleCategory.scss';
 
 
 const SingleCategory = ({ assets, category }) => {

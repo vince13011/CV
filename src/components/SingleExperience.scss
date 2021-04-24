@@ -1,12 +1,71 @@
 @use 'src/styles/vars';
+
+.post{
+
+    box-sizing: border-box;
+    width:  82%;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: vars.$gutter auto  vars.$gutter 18%;
+    background-color: vars.$title-color;
+    border:3px solid vars.$alt-color;
+    transition: 0.2s;
+
+    
+    &__containerwithdate{
+        box-sizing: border-box;
+        display: flex;
+        justify-content:flex-start;
+        flex-direction:row;
+        flex-wrap: wrap;
+        border-collapse: collapse;
+        border-top: 2px solid vars.$primary-color;
+        padding-left: 7rem;
+        padding-top: 1rem;
+        
+    }
+   
+   
+
+    &__title{
+        font-weight: bold;
+        font-size: 1.7rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+    }
+
+    &__content,&__date{
+        width: 30%;
+        font-size: 1.4rem;
+        align-self: center;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:500px) {
 
     .post{
 
+        width: 65%;
+        margin-left: 9.7rem;
+        margin-top:1rem;
         
-        &__container{
+        &__containerwithdate{
 
-            justify-content:space-between;
+            padding-left: 0;
+            justify-content:center;
             text-align: start;
             
             
@@ -14,14 +73,16 @@
 
         &__content{
             
-            width: 7rem;
-
-            &:first-child{
-                padding-left: 0.5rem;
+            padding-left: 0.5rem;
+            width: 50%;
+            font-size: 1rem;
+            text-align: center;
             }
-            &:last-child{
+            &__date{
                 margin-left: 5.5rem;
+                width: 50%;
+                font-size: 1rem;
             }
         }
     }
-}
+

@@ -10,10 +10,10 @@ const SingleExperience = ({ experiences }) => {
             <h4 className="post__title">Expériences</h4>
 
                 {experiences.map((experience) =>
-                    <ul className="post__container" key={experience.id}>
+                    <ul className="post__containerwithdate" key={experience.id}>
                         <li className="post__content">{experience.job}</li>
                         <li className="post__content">{experience.society}</li>
-                        <li className="post__content">{experience.date}</li>
+                        <li className="post__date">{experience.date}</li>
                     </ul>
                 )} 
         </Link>

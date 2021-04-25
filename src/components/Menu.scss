@@ -1,9 +1,21 @@
 @use 'src/styles/vars';
 
+ 
+    a {
+        
+        display:block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .active{
+        background-color: vars.$light-color;
+    }
+
 nav{
     background-color: vars.$primary-color ;
     width: 20%;
-    height: 577px;
+    height: 490px;
     position: sticky;
     top: 0;
     
@@ -26,20 +38,14 @@ nav{
             height: 100%;
             box-sizing: border-box;
             border-collapse: collapse;
-            padding-left: 2rem;
-            padding-right: 2rem;
             text-align: center;
             transition: 0.2s;
-            padding-top: 1.7rem;
             font-size: 1.2rem;
             border-bottom: 2px solid vars.$light-color;
-            margin-left: 0.7rem;
-    
-
             
             
             &:first-child{
-                
+                padding-top: 1rem;
             }
 
             &:last-child{
@@ -54,7 +60,8 @@ nav{
                     }
 
             a {
-                margin-top: 3rem;
+                text-align: center;
+                padding-top: 2rem;
             }
         }
     }
@@ -72,14 +79,17 @@ nav{
         
             &link {
                 width: 100%;
-                padding-left: 0.5rem;
-                padding-top: 2.3rem;
+                
                 font-size: 1rem;
                 margin-left: 0;
                 text-align: left;
 
+                &--active{
+                    background-color: vars.$light-color;
+                }
+
                 a {
-                    padding-left: 0.2rem;
+                    
                 }
 
                 &:hover {

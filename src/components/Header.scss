@@ -193,7 +193,7 @@
 
                 &__image{
                     margin-top:-1rem;
-                    margin-left: 6.3rem;
+                    margin-left: 4rem;
                 }
 
                 &__name{
@@ -202,16 +202,18 @@
                 }
 
                 .links{
-                    width: 50%;
+                    width: 60%;
                     display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
                     align-self: center;
-                 
+                    margin-left: -2rem;
+                    
 
                     &__list{
 
-                        text-align: center;
+                        text-align: left;
+
                     }
                     }
             
@@ -227,7 +229,7 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 font-size: 1.5rem;
-                margin-left:3rem;
+                margin-left:1rem;
                 margin-top: 0.7rem;
                 
     

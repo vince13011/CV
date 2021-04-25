@@ -4,14 +4,14 @@
 .asset{
 
     box-sizing: border-box;
-    width: 80%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-top: 2%;
-    margin-left: 20%;
-    background-color: vars.$light-color;
+    margin-left: 29%;
+    background-color: vars.$primary-color;
     border: 3px solid vars.$alt-color;
     transition: 0.2s;
 
@@ -30,9 +30,10 @@
         flex-direction:row;
         flex-wrap: wrap;
         border-collapse: collapse;
-        border-top: 2px solid vars.$primary-color;
+        border-top: 2px solid vars.$light-color;
         margin-left:1rem;
         margin-right: 1rem;
+        
         
     }
    
@@ -55,6 +56,19 @@
         width: 30%;
         
     }
+}
+
+@media screen and (max-width:700px) {
+
+        .asset{
+            
+
+            
+            &__content{
+        
+                font-size: 1rem;
+            }
+        }
 }
 
 @media screen and (max-width:500px) {

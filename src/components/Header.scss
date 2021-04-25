@@ -16,9 +16,8 @@
         display: flex;
         flex-direction:row;
         flex-wrap: wrap;
-        justify-content:flex-start;
         color:vars.$title-color;
-        padding-bottom: 0.5rem;
+        padding-bottom: 2%;
         
 
         &__portrait{
@@ -59,7 +58,7 @@
             flex-direction:column;
             flex-wrap: wrap;
             justify-content:flex-start;
-            text-align: start;
+            text-align: center;
             font-size: 4rem;
             padding-left: 5%;
             margin-bottom: -1%;
@@ -137,32 +136,144 @@
         
  }
 
- @media screen and (max-width:1000px) {
-     .header{
-       
+
+
+ @media screen and (max-width:700px) {
+
+    .header{
+        
+        margin-top: -1.5rem;
+    
         &__presentation{
-
+        
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content:center;
+            padding-bottom: 1rem;
+    
             &__portrait{
+                order: 2;
+                box-sizing: border-box;
+                display: flex;
+                align-self: flex-end;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                margin-left: 3.5rem;
 
+                &__image{
+                    margin-top:-1rem;
+                    margin-left: 12.5rem;
+                }
 
-                
+                &__name{
+                    margin-top: -1.7rem;
+                    margin-left: -1.4rem;
+                }
+
+                .links{
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-self: center;
+                    margin-left: 9rem;
+                    
+
+                    &__list{
+
+                        text-align: left;
+
+                    }
+                    }
+            
             }
-
 
             &__title{
-
-                font-size: 3rem;
-                width: 26rem;
+                width: 400px;
+                order: 1;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                font-size: 1.5rem;
+                margin-left:0;
+                margin-top: 0.7rem;
+                
+    
+                &__job{
+    
+                    font-size: 1.2rem;
+              width:213px;
+              align-self: flex-start;
+              text-align: start;
+                   
+                }
+                &__name{
+                    
+                    font-size: 1.2rem;
+                    width: 112px;
+                    align-self: flex-end;
+                    text-align: end;
+                }
+    
+                
             }
-        .contact{
-
+    
+    
+            
+    
+            
         }
+    
+            .header__nav{
+                width: 100%;
+                margin: -2rem auto auto auto;
+                box-shadow: 0px 10px 13px -7px vars.$primary-color;
+                box-sizing: border-box;
+                display:flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                justify-content:center;
+                height: 100%;
+            
+            
+                &link {
+                    
+                    box-sizing: border-box;
+                    border-collapse: collapse;
+                    border-left: 1px solid vars.$primary-color;
+                    border-right: 1px solid vars.$primary-color;
+                    padding-left: 0.15rem ;
+                    padding-right: 0.15rem;
+                    text-align: center;
+                    transition: 0.2s;
+                    height:60%;
+                    padding-top:0.3rem;
+                    font-size: 0.7rem;
 
-        }
+                    &:hover {
+                
+                        font-size: 0.7rem;
+                        color:vars.$primary-color;
+                                    
+                            }
+                }
+    
+            
+            
+            }
+            
      }
-
-
  }
+
+
+
 
  @media screen and (max-width:500px) {
  
@@ -220,7 +331,6 @@
             }
 
             &__title{
-                text-align: center;
                 width: 400px;
                 order: 1;
                 box-sizing: border-box;

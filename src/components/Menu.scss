@@ -15,11 +15,9 @@
     }
 
 nav{
-    background-color: vars.$light-color ;
-    border-right: 3px solid vars.$alt-color !important;
     
     width: 20%;
-    height: 581px;
+    height: 100%;
     position: sticky;
     top: 0;
     
@@ -74,8 +72,48 @@ nav{
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:700px) {
 
+    
+    nav{
+        
+        width: 27%;
+        .header__nav{
+            
+        
+        
+            &link {
+                width: 100%;
+                
+                font-size: 1rem;
+                margin-left: 0;
+                text-align: left;
+
+                &--active{
+                    background-color: vars.$light-color;
+                }
+
+                a {
+                    
+                }
+
+                &:hover {
+                    font-size: 1.1rem;
+                    background-color: none;
+                   
+                            
+                }
+
+                &:last-child{
+                padding-bottom: 3rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:500px) {
 
     nav{
         

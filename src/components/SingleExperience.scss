@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: vars.$gutter auto  vars.$gutter 18%;
-    background-color: vars.$title-color;
+    background-color: vars.$primary-color;
     border:3px solid vars.$alt-color;
     transition: 0.2s;
 
@@ -48,7 +48,22 @@
 
 
 
+@media screen and (max-width:700px) {
 
+    .post{
+        margin: 2rem auto 2rem 26%;
+        &__containerwithdate{
+            justify-content: space-between;
+            padding-left: 1rem;
+        }
+
+        &__content{
+
+        font-size: 1rem;
+        }
+
+    }
+}
 
 
 

@@ -10,7 +10,6 @@
     justify-content: flex-start;
     margin: vars.$gutter auto  vars.$gutter 18%;
     background-color: vars.$primary-color;
-    border:3px solid vars.$alt-color;
     transition: 0.2s;
 
     
@@ -21,7 +20,7 @@
         flex-direction:row;
         flex-wrap: wrap;
         border-collapse: collapse;
-        border-top: 2px solid vars.$primary-color;
+        border-top: 2px solid vars.$light-color;
         padding-left: 7rem;
         padding-top: 1rem;
         
@@ -34,8 +33,7 @@
         font-size: 1.7rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        border-bottom: 2px solid vars.$light-color;
-
+        
     }
 
     &__content,&__date{

@@ -4,6 +4,7 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
+//styles
 import './App.scss';
 //component
 import Home from './Home';
@@ -11,10 +12,10 @@ import CategoryPage from './CategoryPage';
 import QualificationPage from './QualificationPage';
 import ExperiencePage from './ExperiencePage';
 import getAssetsByCategory from '../selectors/getAssetsByCategory';
+//axios
 import requestApi from '../axios/requestApi';
 
 
-// == Composant
 const App = () => {
 
   const [assets, setAssets] = useState([]);

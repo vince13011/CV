@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
-import propTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 import './Header.scss';
 import './Menu.scss';
 

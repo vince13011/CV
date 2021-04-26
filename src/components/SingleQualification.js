@@ -1,6 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
-import styles from './SingleQualification.scss';
+
 import { Link } from 'react-router-dom';
 
 const SingleQualification = ({ qualifications }) => {

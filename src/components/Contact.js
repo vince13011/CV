@@ -1,6 +1,4 @@
 import React from 'react';
-import propTypes from 'prop-types';
-import styles from './Contact.scss';
 import phone from '../assets/iconPhone.png';
 import map from '../assets/iconMap.png';
 import mail from '../assets/iconMail.png';

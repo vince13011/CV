@@ -1,6 +1,4 @@
 import React from 'react';
-import propTypes from 'prop-types';
-import styles from './QualContent.scss';
 import { Link } from 'react-router-dom';
 
 const QualContent = ({ qualifications }) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './QualificationPage.scss';
+
 
 //component
 import Header from './Header';

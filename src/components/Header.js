@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+
 import Contact from './Contact';
 import ExtLinks from './ExtLinks';
 import CVPicture from '../assets/stickerCV.png';

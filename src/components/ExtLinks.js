@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+
 import  './ExtLinks.scss';
 import githubLink from '../assets/iconGithub.png';
 import linkedinLink from '../assets/iconLinkedin.png';

@@ -44,8 +44,8 @@
 @media screen and (max-width:700px) {
 
     .contact{
-        width: 31%;
        
+        width:12rem;
 
         &__title{
             font-size: 1rem; 
@@ -61,7 +61,7 @@
             flex-wrap: nowrap;
             justify-content: center;
             width: 100%;
-            padding-left: rem;
+            padding-left: 0;
     
         }
 
@@ -79,7 +79,7 @@
 @media screen and (max-width:500px) {
     .contact{
         padding-left: 0;
-        width: 100%;
+        width: 19rem;
         margin-left: 4rem;
         
 

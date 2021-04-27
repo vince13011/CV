@@ -1,12 +1,11 @@
 import React from 'react';
-
 import Contact from './Contact';
 import ExtLinks from './ExtLinks';
 import CVPicture from '../assets/stickerCV.png';
 import './Contact.scss'
 import './Header.scss';
 
-const Header = ({ categories }) => {
+const Header = () => {
 
   return (
     <header className="header">

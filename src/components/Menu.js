@@ -1,10 +1,8 @@
-
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './Header.scss';
 import './Menu.scss';
-
-
 
 
 const Menu = ({ categories }) => {
@@ -53,6 +51,15 @@ const Menu = ({ categories }) => {
       ))}
     </>
   )
+}
+
+Menu.propTypes = {
+  categories: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+    }),
+  ),
 }
 
 export default Menu;

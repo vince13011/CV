@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './SingleCategory.scss';
 import './SingleExperience.scss';
 
@@ -20,5 +21,19 @@ const SingleCategory = ({ assets, category }) => {
         </Link>
     )
 }
+
+SingleCategory.propTypes = {
+    assets: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            name: PropTypes.string.isRequired,
+        }),
+    ),
+    category: PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+    }),
+};
+
 
 export default SingleCategory;

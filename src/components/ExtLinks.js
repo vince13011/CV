@@ -1,5 +1,4 @@
 import React from 'react';
-
 import  './ExtLinks.scss';
 import githubLink from '../assets/iconGithub.png';
 import linkedinLink from '../assets/iconLinkedin.png';

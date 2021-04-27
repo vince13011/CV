@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.scss';
+import PropTypes from 'prop-types';
 //component
 import Header from './Header';
 import ExpContent from './ExpContent';
@@ -34,5 +35,22 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
         </>
     )
 }
+
+Home.propTypes = {
+    assets: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.number.isRequired,
+          name: PropTypes.string.isRequired,
+        }),
+      ),
+      categories: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.number.isRequired,
+          name: PropTypes.string.isRequired,
+        }),
+      ),
+  };
+
+
 
 export default Home;

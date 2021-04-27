@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './SingleCategory.scss';
 import './SingleExperience.scss';
 
@@ -17,6 +18,17 @@ const SingleQualification = ({ qualifications }) => {
         </Link>
 
     )
+}
+
+SingleQualification.propTypes = {
+    qualifications: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            name: PropTypes.string.isRequired,
+            entity: PropTypes.string,
+            date: PropTypes.string.isRequired,
+        }),
+    ),
 }
 
 export default SingleQualification;

@@ -3,12 +3,12 @@
 .post{
 
     box-sizing: border-box;
-    width:  82%;
+    width:  95%;
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: vars.$gutter auto  vars.$gutter 18%;
+    margin: vars.$gutter auto  vars.$gutter;
     background-color: vars.$primary-color;
     transition: 0.2s;
 
@@ -16,12 +16,12 @@
     &__containerwithdate{
         box-sizing: border-box;
         display: flex;
-        justify-content:flex-start;
+        justify-content:space-between;
         flex-direction:row;
         flex-wrap: wrap;
         border-collapse: collapse;
         border-top: 2px solid vars.$light-color;
-        padding-left: 7rem;
+        padding-left: 1rem;
         padding-top: 1rem;
         
     }
@@ -50,7 +50,8 @@
 @media screen and (max-width:700px) {
 
     .post{
-        margin: 2rem auto 2rem 26%;
+        width: 95%;
+        margin: 2rem auto 2rem;
         &__containerwithdate{
             justify-content: space-between;
             padding-left: 1rem;
@@ -71,10 +72,6 @@
 @media screen and (max-width:500px) {
 
     .post{
-
-        width: 65%;
-        margin-left: 8rem;
-        margin-top:1rem;
         
         &__containerwithdate{
 

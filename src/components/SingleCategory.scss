@@ -3,7 +3,7 @@
 .post{
 
     box-sizing: border-box;
-    width:  82%;
+    width:  95%;
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
@@ -22,7 +22,7 @@
         flex-wrap: wrap;
         border-collapse: collapse;
         border-top: 2px solid vars.$light-color;
-        padding-left: 7rem;
+        padding-left: 1rem;
         padding-top: 1rem;
         
     }

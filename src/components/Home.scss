@@ -2,13 +2,13 @@
 
 .content{
     min-height: 23rem;
-    width: 90%;
+    width: 78%;
     box-sizing: border-box;
     display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
+    flex-direction:column;
+    flex-wrap: nowrap;
     justify-content:space-evenly;
-    margin: -21rem auto 1rem auto; 
+     
      
 }
 
@@ -17,7 +17,18 @@
 
     .content{
        
-        width: 95%;
+        width: 73%;
+
+
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    .content{
+       
+        width: 70%;
 
 
 }

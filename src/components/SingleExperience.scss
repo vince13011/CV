@@ -36,7 +36,7 @@
         
     }
 
-    &__content,&__date{
+    &__content,&__date,&__date__duration{
         width: 30%;
         font-size: 1.4rem;
         align-self: center;
@@ -92,9 +92,15 @@
             text-align: center;
             }
             &__date{
-                margin-left: 19%;
+                margin-left: 5.5rem;
                 width: 50%;
                 font-size: 1rem;
+                
+                &__duration{
+                    margin-left: 19%;
+                    width: 50%;
+                    font-size: 1rem;
+                }
             }
         }
     }

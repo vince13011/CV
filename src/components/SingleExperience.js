@@ -15,7 +15,7 @@ const SingleExperience = ({ experiences }) => {
                     <ul className="post__containerwithdate" key={experience.id}>
                         <li className="post__content">{experience.job}</li>
                         <li className="post__content">{experience.society}</li>
-                        <li className="post__date">{experience.date}</li>
+                        <li className="post__date__duration">{experience.date}</li>
                     </ul>
                 )} 
         </Link>

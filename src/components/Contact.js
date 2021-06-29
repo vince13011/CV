@@ -19,7 +19,7 @@ const Contact = () => {
             </li>
             <li className="contact__list" >
             <img className="contact__list__icon" src={map} alt="icon map" />
-              <p className="contact__list__content"> 4b Rue du Château 13010 Marseille</p>
+              <p className="contact__list__content">13010 Marseille</p>
             </li>
           </ul>
         </div>

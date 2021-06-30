@@ -2,7 +2,7 @@
 @use 'src/styles/index.scss';
 
 .asset{
-
+    height: 92vh;
     box-sizing: border-box;
     width: 95%;
     display: flex;
@@ -38,6 +38,7 @@
     }
     
     
+
     &__container{
         box-sizing: border-box;
         display: flex;
@@ -45,27 +46,18 @@
         flex-direction:row;
         flex-wrap: wrap;
         border-collapse: collapse;
-        border-top: 2px solid vars.$light-color;
         margin-left:10%;
+        margin-top: vars.$gutter;
+        height: 100%;
+        border-top: 2px solid vars.$light-color;
         
+        &:first-child{
+            border-top: none
+        }
         
     }
 
    
-   
-
-    &__title{
-        font-weight: bold;
-        font-size: 1.7rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-       
-        
-        
-
-
-    }
-
     &__content{
         font-size: 1.4rem;
         width: 30%;

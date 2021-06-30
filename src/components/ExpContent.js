@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import './ExpContent.scss';
 
 const ExpContent = ({ experiences }) => {
     return (
        
          
-        <Link className="asset" to={`/categories/experiences`}>
+        <Link className="experience" to={`/categories/experiences`}>
             {experiences.map((experience) =>
-                <ul  className="asset__container"  key={experience.id}>
+                <ul  className="experience__container"  key={experience.id}>
                     <li  className="asset__content">{experience.job}</li>
                     <li className="asset__content">{experience.society}</li>
                     <li className="asset__content">{experience.date}</li>

@@ -34,7 +34,7 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
 
     const beforeIndex = (e) => {
         e.preventDefault();
-        if (index >= 0) {
+        if (index <2) {
             setindex(4);
         }
 
@@ -73,7 +73,7 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
                 }
 
                 {index === 3 &&
-                    <ExpContent experiences={experiences} styles={{ display: { nextIndex } }} />
+                    <ExpContent experiences={experiences} />
                 }
 
                 {index === 4 &&

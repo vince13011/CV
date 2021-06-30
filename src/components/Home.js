@@ -19,32 +19,36 @@ import getAssetsByCategory from '../selectors/getAssetsByCategory';
 const Home = ({ categories, assets, experiences, qualifications }) => {
 
     const [index, setindex] = useState(1);
+    const [nextcat, setnextcat] = useState(index+1);
+    const [beforecat, setbeforecat] = useState(4);
 
     const nextIndex = (e) => {
         e.preventDefault();
-        if (index >= 4) {
-            setindex(1);
+
+        switch (index) {
+            case 1: setindex(index+1);setnextcat(3);setbeforecat(1); break;
+            case 2: setindex(index+1);setnextcat(4);setbeforecat(2); break;
+            case 3: setindex(index+1);setnextcat(1);setbeforecat(3); break;
+            case 4: setindex(1);setnextcat(2);setbeforecat(4) ;break;
+            
+              
         }
 
-        else {
-            setindex(index + 1);
-
-        }
     }
 
     const beforeIndex = (e) => {
         e.preventDefault();
-        if (index <2) {
-            setindex(4);
-        }
 
-        else {
-            setindex(index - 1);
-
+        switch (index) {
+            case 1: setindex(4);setnextcat(1) ;setbeforecat(3); break;
+            case 2: setindex(index-1);setnextcat(2) ;setbeforecat(4); break;
+            case 3: setindex(index-1);setnextcat(3) ;setbeforecat(1); break;
+            case 4: setindex(index-1);setnextcat(4) ;setbeforecat(2); break;
         }
+            
     }
-
-
+    
+   
     return (
         <>
             <Header categories={categories} />
@@ -57,12 +61,26 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
                 <div className="arrows">
                     <IoIosArrowBack onClick={beforeIndex}  className="arrows__left"/>
 
+                    {categories.filter(category => category.id === beforecat).map(category =>
+                        <h4 className="category_title">{category.name}</h4> 
+                    )}
+                    {beforecat === 3 && <h4 className="category_title"> Expériences</h4>}
+                    {beforecat === 4 && <h4 className="category_title"> Diplômes</h4>}
+
+                    
                     {index < 3 && categories.filter(category => category.id === index).map(category =>
                         <h2 className="category_title">{category.name}</h2>
                         
                     )}
                     {index === 3 && <h2 className="category_title"> Expériences</h2>}
                     {index === 4 && <h2 className="category_title"> Diplômes</h2>}
+
+                    {categories.filter(category => category.id === nextcat).map(category =>
+                        <h4 className="category_title">{category.name}</h4> 
+                    )}
+                    {nextcat === 3 && <h4 className="category_title"> Expériences</h4>}
+                    {nextcat === 4 && <h4 className="category_title"> Diplômes</h4>}
+
                     <IoIosArrowForward onClick={nextIndex} className="arrows__right" />
 
                 </div>

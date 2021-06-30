@@ -7,7 +7,6 @@ const ExpContent = ({ experiences }) => {
        
          
         <Link className="asset" to={`/categories/experiences`}>
-            <h4 className="asset__title">Expériences</h4>
             {experiences.map((experience) =>
                 <ul  className="asset__container"  key={experience.id}>
                     <li  className="asset__content">{experience.job}</li>

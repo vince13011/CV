@@ -10,15 +10,30 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-top: vars.$gutter;
+    margin-bottom: 3vh;
     margin-left: 4%;
     background-color: vars.$primary-color;
     border: 3px solid vars.$alt-color;
     transition: 0.2s;
+    animation-duration: 3s;
+  animation-name: slidein;
 
+    @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 95%;
+        }
+      
+        to {
+          margin-left: 4%;
+          width: 95%;
+        }
+      }
 
     &:hover{
        
         
+
 
     }
     
@@ -35,6 +50,7 @@
         
         
     }
+
    
    
 

@@ -1,16 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Asset.scss';
+
 import PropTypes from 'prop-types';
 
 
-const Asset = ({ assets, category }) => {
+const SlideAsset = ({ assets, category }) => {
     return (
-        <Link className="asset" to={`/categories/${category.name}`}>
-            <ul className="asset__container">
+        <Link className="slide__asset" to={`/categories/${category.name}`}>
+
+
+            <h4 className="slide__asset__title">{category.name}</h4>
+            <ul className="slide__asset__container">
 
                 {assets.map((asset) =>
-                    <li key={asset.id} className="asset__content">{asset.name}</li>
+                    <li key={asset.id} className="slide__asset__content">{asset.name}</li>
                 )}
             </ul>
 
@@ -18,7 +21,7 @@ const Asset = ({ assets, category }) => {
     )
 }
 
-Asset.propTypes = {
+SlideAsset.propTypes = {
     assets: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.number.isRequired,
@@ -32,4 +35,4 @@ Asset.propTypes = {
 };
 
 
-export default Asset;
+export default SlideAsset;

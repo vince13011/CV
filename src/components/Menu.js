@@ -19,6 +19,17 @@ const Menu = ({ categories }) => {
           Accueil
           </NavLink>
       </li>
+      {categories.map(({ name, id }) => (
+        <li key={id} className="header__navlink">
+          <NavLink
+            activeClassName="active"
+            to={`/categories/${name}`}
+            exact
+          >
+            {name}
+          </NavLink>
+        </li>
+      ))}
       <li key='Expériences' className="header__navlink" >
         <NavLink
           activeClassName="active"
@@ -37,18 +48,6 @@ const Menu = ({ categories }) => {
           Diplômes
           </NavLink>
       </li>
-
-      {categories.map(({ name, id }) => (
-        <li key={id} className="header__navlink">
-          <NavLink
-            activeClassName="active"
-            to={`/categories/${name}`}
-            exact
-          >
-            {name}
-          </NavLink>
-        </li>
-      ))}
     </>
   )
 }

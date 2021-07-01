@@ -19,8 +19,7 @@ import getAssetsByCategory from '../selectors/getAssetsByCategory';
 const Home = ({ categories, assets, experiences, qualifications }) => {
 
     const [index, setindex] = useState(1);
-    const [nextcat, setnextcat] = useState(index+1);
-    const [beforecat, setbeforecat] = useState(4);
+
 
     const nextIndex = (e) => {
         e.preventDefault();

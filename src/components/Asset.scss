@@ -14,54 +14,44 @@
     margin-left: 4%;
     background-color: vars.$primary-color;
     border: 3px solid vars.$alt-color;
-    transition: 0.2s;
-    animation-duration: 3s;
-  animation-name: slidein;
-
-    @keyframes slidein {
-        from {
-          margin-left: 100%;
-          width: 95%;
-        }
-      
-        to {
-          margin-left: 4%;
-          width: 95%;
-        }
-      }
-
-    &:hover{
-       
-        
-
-
-    }
+    animation-duration: 2s;
+    animation-name: slidein;
     
-    
-
-    &__container{
-        box-sizing: border-box;
-        display: flex;
-        justify-content:flex-start;
-        flex-direction:row;
-        flex-wrap: wrap;
-        border-collapse: collapse;
-        margin-left:10%;
-        margin-top: vars.$gutter;
-        height: 100%;
-        border-top: 2px solid vars.$light-color;
-        
-        &:first-child{
-            border-top: none
+        &__container{
+            box-sizing: border-box;
+            display: flex;
+            justify-content:flex-start;
+            flex-direction:row;
+            flex-wrap: wrap;
+            border-collapse: collapse;
+            margin-left:10%;
+            margin-top: vars.$gutter;
+            height: 100%;
+            border-top: 2px solid vars.$light-color;
+            
+            &:first-child{
+                border-top: none
+            }
+            
         }
-        
-    }
 
    
     &__content{
         font-size: 1.4rem;
         width: 30%;
         
+    }
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 90%;
+      width: 95%;
+    }
+  
+    to {
+      margin-left: 4%;
+      width: 95%;
     }
 }
 

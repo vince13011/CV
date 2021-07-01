@@ -29,9 +29,7 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
             case 1: setindex(index+1);setnextcat(3);setbeforecat(1); break;
             case 2: setindex(index+1);setnextcat(4);setbeforecat(2); break;
             case 3: setindex(index+1);setnextcat(1);setbeforecat(3); break;
-            case 4: setindex(1);setnextcat(2);setbeforecat(4) ;break;
-            
-              
+            case 4: setindex(1);setnextcat(2);setbeforecat(4) ;break;  
         }
 
     }
@@ -54,34 +52,34 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
             <Header categories={categories} />
             <nav>
                 <ul className="header__nav">
-                    <Menu key={categories} categories={categories} />
+                    <Menu categories={categories} />
                 </ul>
             </nav>
             <main className="content">
                 <div className="arrows">
-                    <IoIosArrowBack onClick={beforeIndex}  className="arrows__left"/>
-
+                    <IoIosArrowBack onClick={beforeIndex}  className="arrows__left" alt="flèche gauche"/>
+                    
                     {categories.filter(category => category.id === beforecat).map(category =>
-                        <h4 className="category_title">{category.name}</h4> 
+                        <h4 key={category.id} className="category_title__left">{category.name}</h4> 
                     )}
-                    {beforecat === 3 && <h4 className="category_title"> Expériences</h4>}
-                    {beforecat === 4 && <h4 className="category_title"> Diplômes</h4>}
+                    {beforecat === 3 && <h4 className="category_title__left"> Expériences</h4>}
+                    {beforecat === 4 && <h4 className="category_title__left"> Diplômes</h4>}
 
                     
                     {index < 3 && categories.filter(category => category.id === index).map(category =>
-                        <h2 className="category_title">{category.name}</h2>
+                        <h2 key={category.id} className="category_title__center">{category.name}</h2>
                         
                     )}
-                    {index === 3 && <h2 className="category_title"> Expériences</h2>}
-                    {index === 4 && <h2 className="category_title"> Diplômes</h2>}
+                    {index === 3 && <h2 className="category_title__center"> Expériences</h2>}
+                    {index === 4 && <h2 className="category_title__center"> Diplômes</h2>}
 
                     {categories.filter(category => category.id === nextcat).map(category =>
-                        <h4 className="category_title">{category.name}</h4> 
+                        <h4 key={category.id} className="category_title__right">{category.name}</h4> 
                     )}
-                    {nextcat === 3 && <h4 className="category_title"> Expériences</h4>}
-                    {nextcat === 4 && <h4 className="category_title"> Diplômes</h4>}
+                    {nextcat === 3 && <h4 className="category_title__right"> Expériences</h4>}
+                    {nextcat === 4 && <h4 className="category_title__right"> Diplômes</h4>}
 
-                    <IoIosArrowForward onClick={nextIndex} className="arrows__right" />
+                    <IoIosArrowForward onClick={nextIndex} className="arrows__right" alt="flèche droite" />
 
                 </div>
                 {categories.filter(category => category.id === index).map(category =>

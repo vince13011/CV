@@ -15,7 +15,7 @@
     background-color: vars.$primary-color;
     border: 3px solid vars.$alt-color;
     transition: 0.2s;
-    animation-duration: 3s;
+    animation-duration: 2s;
   animation-name: slidein;
 
         
@@ -26,18 +26,14 @@
         flex-direction:row;
         flex-wrap: wrap;
         border-collapse: collapse;
-       
-        margin-top: vars.$gutter;
+       // margin-top: vars.$gutter;
         height: 100%;
         border-top: 4px solid vars.$light-color;
-        
-        padding-top: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         
         &:first-child{
             border-top: none
-        }
-        &:last-child{
-            margin-bottom:  vars.$gutter;;
         }
     
     }
@@ -45,7 +41,7 @@
 
       @keyframes slidein {
         from {
-          margin-left: 100%;
+          margin-left: 90%;
           width: 95%;
         }
       

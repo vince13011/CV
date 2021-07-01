@@ -45,7 +45,8 @@ const App = () => {
         </Route>
         <Route path='/cv' component={() => {
           window.location.href = 'https://drive.google.com/file/d/1rCn-w39jgq3CB8ZZhfqbbCecZin8FEtl/view?usp=sharing';
-          return null;
+          <Home assets={assets} categories={categories}
+            experiences={experiences} qualifications={qualifications} />
         }} />
         <Route
           exact

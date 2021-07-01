@@ -30,6 +30,7 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
             case 2: setindex(index+1);setnextcat(4);setbeforecat(2); break;
             case 3: setindex(index+1);setnextcat(1);setbeforecat(3); break;
             case 4: setindex(1);setnextcat(2);setbeforecat(4) ;break;  
+            default: setindex(+1);setnextcat(+2);setbeforecat(index) ;break; 
         }
 
     }
@@ -42,6 +43,7 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
             case 2: setindex(index-1);setnextcat(2) ;setbeforecat(4); break;
             case 3: setindex(index-1);setnextcat(3) ;setbeforecat(1); break;
             case 4: setindex(index-1);setnextcat(4) ;setbeforecat(2); break;
+            default:  setindex(index-1);setnextcat(index) ;setbeforecat(index-2); break;
         }
             
     }

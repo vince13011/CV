@@ -61,25 +61,38 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
                 <div className="arrows">
                     <IoIosArrowBack onClick={beforeIndex}  className="arrows__left" alt="flèche gauche"/>
                     
+                    {//categorie 1
+                        }
                     {categories.filter(category => category.id === beforecat).map(category =>
                         <h4 key={category.id} className="category_title__left">{category.name}</h4> 
                     )}
                     {beforecat === 3 && <h4 className="category_title__left"> Expériences</h4>}
                     {beforecat === 4 && <h4 className="category_title__left"> Diplômes</h4>}
 
-                    
+                    {//categorie principale 2
+                        }
                     {index < 3 && categories.filter(category => category.id === index).map(category =>
                         <h2 key={category.id} className="category_title__center">{category.name}</h2>
                         
                     )}
                     {index === 3 && <h2 className="category_title__center"> Expériences</h2>}
                     {index === 4 && <h2 className="category_title__center"> Diplômes</h2>}
-
+                        {//categorie 3
+                        }
                     {categories.filter(category => category.id === nextcat).map(category =>
                         <h4 key={category.id} className="category_title__right">{category.name}</h4> 
                     )}
                     {nextcat === 3 && <h4 className="category_title__right"> Expériences</h4>}
                     {nextcat === 4 && <h4 className="category_title__right"> Diplômes</h4>}
+                    
+                    {//categorie 4
+                        }
+                    {categories.filter(category => category.id === nextcat+1 && category.id < 3).map(category =>
+                        <h4 key={category.id} className="category_title__right">{category.name}</h4> 
+                    )}
+                    {nextcat+1 === 3 && <h4 className="category_title__right"> Expériences</h4>}
+                    {nextcat+1 === 4 && <h4 className="category_title__right"> Diplômes</h4>}
+                    {nextcat+1 === 5 && <h4 className="category_title__right"> Compétences</h4>}
 
                     <IoIosArrowForward onClick={nextIndex} className="arrows__right" alt="flèche droite" />
 

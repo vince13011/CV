@@ -26,4 +26,10 @@ const Slider = ({ index, beforeIndex, nextIndex }) => {
 
     )
 }
+
+Slider.propTypes = {
+    index:PropTypes.number.isRequired,
+    beforeIndex:PropTypes.number.isRequired,
+    nextIndex:PropTypes.number.isRequired  
+};
 export default Slider;

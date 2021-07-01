@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import './Home.scss';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 //component
 import Header from './Header';
 import ExpContent from './ExpContent';

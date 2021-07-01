@@ -23,6 +23,7 @@ const Menu = ({ categories }) => {
         <NavLink
           activeClassName="active"
           to={`/cv`}
+          target="_blank"
           exact
         >
          CV (format pdf)

@@ -24,7 +24,7 @@ const App = () => {
   const [qualifications, setQualifications] = useState([]);
 
   useEffect(() => {
-    return (
+    return(
       requestApi.getCategories(setCategories),
       requestApi.getAsset(setAssets),
       requestApi.getExperiences(setExperiences),
@@ -41,13 +41,8 @@ const App = () => {
           exact
           path="/">
           <Home assets={assets} categories={categories}
-            experiences={experiences} qualifications={qualifications} />
+            experiences={experiences} qualifications={qualifications}/>
         </Route>
-        <Route path='/cv' component={() => {
-          window.location.href = 'https://drive.google.com/file/d/1rCn-w39jgq3CB8ZZhfqbbCecZin8FEtl/view?usp=sharing';
-          <Home assets={assets} categories={categories}
-            experiences={experiences} qualifications={qualifications} />
-        }} />
         <Route
           exact
           path="/categories/experiences">

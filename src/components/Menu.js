@@ -20,14 +20,7 @@ const Menu = ({ categories }) => {
           </NavLink>
       </li>
       <li key='cv' className="header__navlink" >
-        <NavLink
-          activeClassName="active"
-          to={`/cv`}
-          target="_blank"
-          exact
-        >
-         CV (format pdf)
-          </NavLink>
+        <a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1rCn-w39jgq3CB8ZZhfqbbCecZin8FEtl/view?usp=sharing'>CV (format pdf)</a>
       </li>
       <li key='switch' className="header__navlink" >
         <NavLink

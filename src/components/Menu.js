@@ -19,33 +19,31 @@ const Menu = ({ categories }) => {
           Accueil
           </NavLink>
       </li>
-      {categories.map(({ name, id }) => (
-        <li key={id} className="header__navlink">
-          <NavLink
-            activeClassName="active"
-            to={`/categories/${name}`}
-            exact
-          >
-            {name}
-          </NavLink>
-        </li>
-      ))}
-      <li key='Expériences' className="header__navlink" >
+      <li key='cv' className="header__navlink" >
         <NavLink
           activeClassName="active"
-          to={`/categories/experiences`}
+          to={`/cv`}
           exact
         >
-          Expériences
+         CV (format pdf)
           </NavLink>
       </li>
-      <li key='Diplomes' className="header__navlink">
+      <li key='switch' className="header__navlink" >
         <NavLink
           activeClassName="active"
-          to={`/categories/diplomes`}
+          to={`/switch`}
           exact
         >
-          Diplômes
+          Switch App e-commerce
+          </NavLink>
+      </li>
+      <li key='projets' className="header__navlink">
+        <NavLink
+          activeClassName="active"
+          to={`/projets`}
+          exact
+        >
+          Mes autres Projets
           </NavLink>
       </li>
     </>

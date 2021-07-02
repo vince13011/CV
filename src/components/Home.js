@@ -21,11 +21,12 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
             <Header categories={categories} />
             <nav>
                 <ul className="header__nav">
-                    <Menu categories={categories} />
+                    <Menu/>
                 </ul>
             </nav>
             <main className="content">
-                <Slider index={index} setIndex={setIndex} />
+                {categories? <Slider index={index} setIndex={setIndex} />: <p className="loading">Chargement des données</p>}
+                
                 {categories.filter(category => category.id === index).map(category =>
 
                     <Asset key={category.id} assets={getAssetsByCategory(assets, category)} category={category} />)

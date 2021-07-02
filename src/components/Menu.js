@@ -5,7 +5,7 @@ import './Header.scss';
 import './Menu.scss';
 
 
-const Menu = ({ categories }) => {
+const Menu = () => {
 
 
   return (
@@ -44,13 +44,5 @@ const Menu = ({ categories }) => {
   )
 }
 
-Menu.propTypes = {
-  categories: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
-    }),
-  ),
-}
 
 export default Menu;

@@ -11,6 +11,14 @@
      
      
 }
+.loading{
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    background-color: vars.$primary-color;
+    font-size: 10rem;
+    padding-left: 40%;
+}
 
 @media screen and (max-width:700px) {
 

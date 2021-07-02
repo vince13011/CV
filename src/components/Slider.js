@@ -1,29 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Slider.scss'
-import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
 
 
 
-
-
-const Slider = ({ index, beforeIndex, nextIndex }) => {
-
+const Slider = ({ index, setIndex }) => {
+    
+    const  clickCategory=(e)=>{
+        e.preventDefault();
+        console.log('valeur evenement',e.target.value)
+        setIndex(Number(e.target.value))
+    }
+    
 
 
     return (
-        <div className="arrows">
-            <button onClick={beforeIndex} className="slider__button" ><IoIosArrowBack  className="arrows__left" /><p className="arrows__text">Précédent</p></button>
-            <div className="category-title_contenaire">
-            <h4 className={`category_title ${index === 1 ? "bolder" : null}`}> Compétences</h4>
-            <h4 className={`category_title ${index === 2 ? "bolder" : null}`}> Qualités</h4>
-            <h4 className={`category_title ${index === 3 ? "bolder" : null}`}> Expériences</h4>
-            <h4 className={`category_title ${index === 4 ? "bolder" : null}`}> Diplômes</h4>
-            </div>
-            <button onClick={nextIndex} className="slider__button" ><IoIosArrowForward className="arrows__right"/><p className="arrows__text">Suivant</p></button>
+        <div className="category-title_contenaire">
+            <button className={`category_title ${index === 1 ? "bolder" : null}`} onClick={clickCategory} value="1" > Compétences</button>
+            <button className={`category_title ${index === 2 ? "bolder" : null}`} onClick={clickCategory} value="2"> Qualités</button>
+            <button className={`category_title ${index === 3 ? "bolder" : null}`} onClick={clickCategory} value="3"> Expériences</button>
+            <button className={`category_title ${index === 4 ? "bolder" : null}`} onClick={clickCategory} value="4"> Diplômes</button>
         </div>
-
-
     )
 }
 

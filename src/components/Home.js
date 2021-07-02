@@ -8,46 +8,14 @@ import QualContent from './QualContent';
 import Asset from './Asset';
 import Menu from './Menu';
 import Slider from './Slider'
-
-
-
-
-
+//selector
 import getAssetsByCategory from '../selectors/getAssetsByCategory';
 
 
 const Home = ({ categories, assets, experiences, qualifications }) => {
 
-    const [index, setindex] = useState(1);
+    const [index, setIndex] = useState(1);
 
-
-    const nextIndex = (e) => {
-        e.preventDefault();
-
-        switch (index) {
-            case 1: setindex(index+1); break;
-            case 2: setindex(index+1); break;
-            case 3: setindex(index+1); break;
-            case 4: setindex(1); break;  
-            default: setindex(+1); break; 
-        }
-
-    }
-
-    const beforeIndex = (e) => {
-        e.preventDefault();
-
-        switch (index) {
-            case 1: setindex(4); break;
-            case 2: setindex(index-1); break;
-            case 3: setindex(index-1); break;
-            case 4: setindex(index-1); break;
-            default: setindex(index-1); break;
-        }
-            
-    }
-    
-   
     return (
         <>
             <Header categories={categories} />
@@ -57,7 +25,7 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
                 </ul>
             </nav>
             <main className="content">
-                <Slider index={index} beforeIndex={beforeIndex} nextIndex={nextIndex}/>
+                <Slider index={index} setIndex={setIndex} />
                 {categories.filter(category => category.id === index).map(category =>
 
                     <Asset key={category.id} assets={getAssetsByCategory(assets, category)} category={category} />)

@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import './Home.scss';
 import PropTypes from 'prop-types';
+import { VscLoading } from 'react-icons/vsc';
 //component
 import Header from './Header';
 import ExpContent from './ExpContent';
@@ -25,7 +26,7 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
                 </ul>
             </nav>
             <main className="content">
-                {categories? <Slider index={index} setIndex={setIndex} />: <p className="loading">Chargement des données</p>}
+                {categories.length? <Slider index={index} setIndex={setIndex} />: <div className="loading"><VscLoading className="loading__icon"/><p className="loading__text" >Chargement des données</p></div>}
                 
                 {categories.filter(category => category.id === index).map(category =>
 

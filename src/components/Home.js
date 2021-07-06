@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import './Home.scss';
 import PropTypes from 'prop-types';
 import { VscLoading } from 'react-icons/vsc';
@@ -14,20 +14,35 @@ import getAssetsByCategory from '../selectors/getAssetsByCategory';
 
 
 const Home = ({ categories, assets, experiences, qualifications }) => {
-
+    const [showMenu, setShowMenu] = useState(false);
+    const clickMenu = () => {
+        if (!showMenu) {
+            setShowMenu(true)
+        }
+        else {
+            setShowMenu(false)
+        }
+    }
     const [index, setIndex] = useState(1);
 
     return (
         <>
             <Header categories={categories} />
             <nav>
-                <ul className="header__nav">
-                    <Menu/>
-                </ul>
+            <ul className="header__nav desktop-version">
+            <Menu showMenu={showMenu} />
+            </ul>
+                <button className="show-menu" onClick={clickMenu}>Menu</button>
+                {showMenu ?
+                    <ul className="header__nav">
+                        <Menu showMenu={showMenu}/>
+                    </ul>
+                    : ""}
+
             </nav>
             <main className="content">
-                {categories.length? <Slider index={index} setIndex={setIndex} />: <div className="loading"><VscLoading className="loading__icon"/><p className="loading__text" >Chargement des données</p></div>}
-                
+                {categories.length ? <Slider index={index} setIndex={setIndex} /> : <div className="loading"><VscLoading className="loading__icon" /><p className="loading__text" >Chargement des données</p></div>}
+
                 {categories.filter(category => category.id === index).map(category =>
 
                     <Asset key={category.id} assets={getAssetsByCategory(assets, category)} category={category} />)

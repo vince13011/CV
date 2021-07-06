@@ -11,7 +11,7 @@ const Header = () => {
     <header className="header">
       <div className="header__presentation">
         <div className="header__presentation__portrait">
-          <img className="header__presentation__portrait__image" src={CVPicture} alt="CV" />
+          <img className="header__presentation__portrait__image" src={CVPicture} alt="profile picture" />
           <h2 className="header__presentation__portrait__name">Vincent Giglio <br/>26 ans</h2>
           <ExtLinks className="extlinks"/>
          </div>

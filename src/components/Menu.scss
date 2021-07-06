@@ -1,6 +1,5 @@
 @use 'src/styles/vars';
 
- 
     a {
         
         display:block;
@@ -115,6 +114,12 @@ nav{
 
 @media screen and (max-width:500px) {
 
+
+.fixed{
+    position: absolute;
+    background-color:vars.$primary-color;
+    margin-top: 22rem;
+}
     nav{
         
         width: 30%;

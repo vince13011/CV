@@ -2,7 +2,7 @@
 @use 'src/styles/index.scss';
 
 .asset{
-    height: 92vh;
+    min-height: 92vh;
     box-sizing: border-box;
     width: 95%;
     display: flex;
@@ -60,6 +60,7 @@
         .asset{
             width: 94%;
             margin-left: 3%;
+            min-height: 36vh;
             
             &__content{
         
@@ -72,8 +73,8 @@
 
     .asset{
 
-        width: 92%;
-        margin-left: 0.5rem;
+        width: 100%;
+        margin-left: 0;
         margin-top: 1rem;
         
         &__container{

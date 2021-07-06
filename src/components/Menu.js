@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.scss';
 import './Menu.scss';
 
 
-const Menu = () => {
+
+const Menu = ({showMenu}) => {
 
 
   return (
-    <>
+    <div  className={showMenu? "fixed": null}>
       <li key='Accueil' className="header__navlink" >
         <NavLink
           activeClassName="active"
@@ -39,7 +40,7 @@ const Menu = () => {
           Mes autres Projets
           </NavLink>
       </li>
-    </>
+    </div>
   )
 }
 

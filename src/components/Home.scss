@@ -11,6 +11,9 @@
      
      
 }
+.show-menu{
+    display: none;
+}
 .loading{
     
     position: absolute;
@@ -58,12 +61,25 @@
 }
 
 @media screen and (max-width:500px) {
+    .desktop-version{
+        display: none !important;
+    }
 
+    .show-menu{
+        display: flex;
+        position: absolute;
+        margin-top: -3rem;
+        
+    
+    }
     .content{
-       
-        width: 70%;
+       margin-left: 2.5%;
+        width: 95%;
 
 
+}
+.loading{
+    height: 53%;
 }
 
 }

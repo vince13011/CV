@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Home.scss';
 import PropTypes from 'prop-types';
 import { VscLoading } from 'react-icons/vsc';
+import { GiHamburgerMenu } from 'react-icons/gi';
+
 //component
 import Header from './Header';
 import ExpContent from './ExpContent';
@@ -30,9 +32,9 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
             <Header categories={categories} />
             <nav>
             <ul className="header__nav desktop-version">
-            <Menu showMenu={showMenu} />
+            <Menu />
             </ul>
-                <button className="show-menu" onClick={clickMenu}>Menu</button>
+                <GiHamburgerMenu className="show-menu" onClick={clickMenu}/>
                 {showMenu ?
                     <ul className="header__nav">
                         <Menu showMenu={showMenu}/>

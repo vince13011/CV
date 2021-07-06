@@ -36,7 +36,7 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
             </ul>
                 <GiHamburgerMenu className="show-menu" onClick={clickMenu}/>
                 {showMenu ?
-                    <ul className="header__nav">
+                    <ul  className={showMenu? " header__nav fixed": "header__nav"}>
                         <Menu showMenu={showMenu}/>
                     </ul>
                     : ""}

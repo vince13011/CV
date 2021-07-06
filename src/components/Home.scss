@@ -65,6 +65,12 @@
         display: none !important;
     }
 
+    .fixed{
+        position: absolute;
+        background-color:vars.$primary-color;
+        margin-top: 330%;
+    }
+
     .show-menu{
         display: flex;
         position: absolute;

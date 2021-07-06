@@ -10,7 +10,7 @@ const Menu = ({showMenu}) => {
 
 
   return (
-    <div  className={showMenu? "fixed": null}>
+    <>
       <li key='Accueil' className="header__navlink" >
         <NavLink
           activeClassName="active"
@@ -41,7 +41,7 @@ const Menu = ({showMenu}) => {
           Mes autres Projets
           </NavLink>
       </li>
-    </div>
+    </>
   )
 }
 

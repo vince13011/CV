@@ -119,7 +119,7 @@ nav{
         width: 30%;
         .header__nav{
             margin-top: 0;
-        
+            border-right: 1px solid vars.$alt-color;
         
             &link {
                 width: 100%;

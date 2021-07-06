@@ -6,7 +6,7 @@ import './Menu.scss';
 
 
 
-const Menu = ({showMenu}) => {
+const Menu = ({clickMenu}) => {
 
 
   return (
@@ -16,6 +16,7 @@ const Menu = ({showMenu}) => {
           activeClassName="active"
           to={`/`}
           exact
+          onClick={clickMenu}
         >
           Accueil
           </NavLink>
@@ -46,7 +47,7 @@ const Menu = ({showMenu}) => {
 }
 
 Menu.propTypes = {
-          id: PropTypes.func
+          clickMenu: PropTypes.func
 }
 
 export default Menu;

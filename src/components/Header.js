@@ -1,8 +1,6 @@
 import React from 'react';
-import Contact from './Contact';
 import ExtLinks from './ExtLinks';
 import CVPicture from '../assets/stickerCV.png';
-import './Contact.scss'
 import './Header.scss';
 
 const Header = () => {
@@ -16,7 +14,7 @@ const Header = () => {
           <ExtLinks className="extlinks"/>
          </div>
          <h1 className="header__presentation__title">Développeur Web <br/>Full Stack </h1> 
-        <Contact className="contact"/> 
+        
       </div>
     </header>
   );

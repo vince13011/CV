@@ -5,27 +5,26 @@ import mail from '../assets/iconMail.png';
 const Contact = () => {
 
   return (
-    
-        <div className="contact" >
-          <h4 className="contact__title">Coordonnées</h4>
-          <ul  className="contact__list__container" >
-            <li className="contact__list" >
-            <img className="contact__list__icon" src={phone} alt="icon phone" />
-              <p className="contact__list__content"> 0668011065</p>
-            </li>
-            <li className="contact__list" >
-            <img className="contact__list__icon" src={mail} alt="icon mail" />
-              <p className="contact__list__content"> vincent.giglio@hotmail.fr</p>
-            </li>
-            <li className="contact__list" >
-            <img className="contact__list__icon" src={map} alt="icon map" />
-              <p className="contact__list__content">13010 Marseille</p>
-            </li>
-          </ul>
-        </div>
-      
-      )
-    }
 
-    export default Contact;
-     
+    <div className="contact" >
+      <h4 className="contact__title">Coordonnées</h4>
+      <ul className="contact__list__container" >
+        <li className="contact__list" >
+          <img className="contact__list__icon" src={map} alt="icon map" />
+          <p className="contact__list__content">13010 Marseille</p>
+        </li>
+        <li className="contact__list" >
+          <img className="contact__list__icon" src={phone} alt="icon phone" />
+          <p className="contact__list__content"> 0668011065</p>
+        </li>
+        <li className="contact__list" >
+          <img className="contact__list__icon" src={mail} alt="icon mail" />
+          <p className="contact__list__content"> vincent.giglio@hotmail.fr</p>
+        </li>
+      </ul>
+    </div>
+
+  )
+}
+
+export default Contact;

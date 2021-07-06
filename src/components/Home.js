@@ -3,6 +3,7 @@ import './Home.scss';
 import PropTypes from 'prop-types';
 import { VscLoading } from 'react-icons/vsc';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import'./Contact.scss'
 
 //component
 import Header from './Header';
@@ -11,6 +12,7 @@ import QualContent from './QualContent';
 import Asset from './Asset';
 import Menu from './Menu';
 import Slider from './Slider'
+import Contact from './Contact';
 //selector
 import getAssetsByCategory from '../selectors/getAssetsByCategory';
 
@@ -59,7 +61,9 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
                 {index === 4 &&
                     <QualContent qualifications={qualifications} />
                 }
+                 
             </main>
+            <Contact className="contact"/>
         </>
     )
 }

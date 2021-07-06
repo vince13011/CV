@@ -8,7 +8,7 @@ const Contact = () => {
     
         <div className="contact" >
           <h4 className="contact__title">Coordonnées</h4>
-          <ul>
+          <ul  className="contact__list__container" >
             <li className="contact__list" >
             <img className="contact__list__icon" src={phone} alt="icon phone" />
               <p className="contact__list__content"> 0668011065</p>

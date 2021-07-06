@@ -3,18 +3,18 @@
 
 .contact{
     
-    width: 11rem;
-    text-align: left;
-    margin-left:10%;
-    align-self: center;
-    
- 
+    width:100%;
+   // margin-bottom: vars.$gutter;
+   
     &__title{
+        display: none;
+        width:100% ;
         text-transform: uppercase;
         font-weight:900;
     }
 
     &__list{
+        margin-left: 1rem;
         display: flex;
         flex-direction:row;
         flex-wrap: nowrap;
@@ -40,84 +40,20 @@
 
 }
 
-
-@media screen and (max-width:850px) {
-
-    .contact{
-       
-        width:12rem;
-
-        &__title{
-            font-size: 1rem; 
-            text-align: center; 
-            text-transform: uppercase;
-            margin-left: -1rem;
-        }
-
-
-        ul{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            width: 100%;
-            padding-left: 0;
-    
-        }
-
-        &__list{
-            text-align: left;
-            font-size: 1rem;
-            line-height: 1rem;
-            flex-wrap: nowrap;
-        }
-    }
-
+.contact__list__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 0;
 
 }
 
-@media screen and (max-width:500px) {
-    .contact{
-        padding-left: 0;
-        width: 19rem;
-        margin-left: 4rem;
-        
 
-        &__title{
-            font-size: 1rem; 
-            text-align: center; 
-            text-transform: uppercase;
-            margin-left: -2rem;
-        }
+@media screen and (max-width:470px) {
 
-        ul{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            width: 85%;
-            padding-left: 3rem;
-    
-        }
-        
-            &__list{
-                text-align: left;
-                font-size: 1rem;
-                line-height: 1rem;
-                flex-wrap: nowrap;
-
-                &__icon{
-
-                    width: 1.5rem;
-                    max-width: 1.5rem;
-                    max-height: 1.5rem;
-                    }
-                &__content{
-                    padding-left: 0.3rem;
-                }
-            }
-
-    }
-
-
-} 
+.contact__list__container{
+    flex-wrap: wrap; 
+}
+}

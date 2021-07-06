@@ -78,7 +78,8 @@ nav{
         
         width: 27%;
         .header__nav{
-            
+            margin-top: 0;
+            border-right: 1px solid vars.$alt-color;
         
         
             &link {
@@ -113,40 +114,7 @@ nav{
 
 
 @media screen and (max-width:500px) {
-
     nav{
-        
         width: 30%;
-        .header__nav{
-            margin-top: 0;
-            border-right: 1px solid vars.$alt-color;
-        
-            &link {
-                width: 100%;
-                
-                font-size: 1rem;
-                margin-left: 0;
-                text-align: left;
-
-                &--active{
-                    background-color: vars.$light-color;
-                }
-
-                a {
-                    
-                }
-
-                &:hover {
-                    font-size: 1.1rem;
-                    background-color: none;
-                   
-                            
-                }
-
-                &:last-child{
-                padding-bottom: 3rem;
-                }
-            }
-        }
     }
 }

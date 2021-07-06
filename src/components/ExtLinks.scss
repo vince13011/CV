@@ -2,6 +2,9 @@
 
 .links{  
     width: 100%;
+    display: flex;
+    justify-content: center;
+    
     &__list{
         text-align: left;
         line-height: 1.2rem;

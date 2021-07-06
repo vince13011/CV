@@ -10,11 +10,11 @@ return(
     <ul className="links">
         <li className="links__list">
         <img className="links__list__icon" src={githubLink} alt="icon github link" />
-        <ExternalLink className="links__list__link" href="https://github.com/vince13011">Mes projets GitHub</ExternalLink>
+        <ExternalLink className="links__list__link" href="https://github.com/vince13011">Compte GitHub</ExternalLink>
         </li>
         <li className="links__list">
         <img className="links__list__icon" src={linkedinLink} alt="icon linkedin link" />
-        <ExternalLink className="links__list__link" href="https://www.linkedin.com/in/vincentgiglio/">Mon compte LinkedIn</ExternalLink>
+        <ExternalLink className="links__list__link" href="https://www.linkedin.com/in/vincentgiglio/">Compte LinkedIn</ExternalLink>
         </li>
     </ul>
     )

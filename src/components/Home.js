@@ -17,7 +17,7 @@ import getAssetsByCategory from '../selectors/getAssetsByCategory';
 
 const Home = ({ categories, assets, experiences, qualifications }) => {
     const [showMenu, setShowMenu] = useState(false);
-    
+
     const clickMenu = () => {
         if (!showMenu) {
             setShowMenu(true)
@@ -32,13 +32,13 @@ const Home = ({ categories, assets, experiences, qualifications }) => {
         <>
             <Header categories={categories} />
             <nav>
-            <ul className="header__nav desktop-version">
-            <Menu />
-            </ul>
-                <GiHamburgerMenu className="show-menu" onClick={clickMenu}/>
+                <ul className="header__nav desktop-version">
+                    <Menu />
+                </ul>
+                <button className="show-menu" onClick={clickMenu}> <GiHamburgerMenu className="burger-menu"/> </button>
                 {showMenu ?
-                    <ul  className={showMenu? " header__nav fixed": "header__nav"}>
-                        <Menu clickMenu={clickMenu}/>
+                    <ul className={showMenu ? " header__nav fixed" : "header__nav"}>
+                        <Menu clickMenu={clickMenu} />
                     </ul>
                     : ""}
 

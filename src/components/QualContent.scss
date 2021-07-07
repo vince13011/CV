@@ -29,7 +29,7 @@
        // margin-top: vars.$gutter;
         height: 100%;
         border-top: 4px solid vars.$light-color;
-        padding-top: 2rem;
+        padding-top: 3rem;
         padding-bottom: 2rem;
         
         &:first-child{
@@ -55,7 +55,7 @@
 
         .qualification{
             width: 100%;
-            margin-left: 0;
+            margin-left: 3;
             
             &__content{
         
@@ -67,9 +67,9 @@
 @media screen and (max-width:500px) {
 
     .qualification{
-
-        width: 92%;
-        margin-left: 0.5rem;
+        min-height: 60vh;
+        width: 100%;
+       
         margin-top: 1rem;
         
         &__container{

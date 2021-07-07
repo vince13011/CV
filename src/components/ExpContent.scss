@@ -55,7 +55,7 @@
     @media screen and (max-width:700px) {
 
         .experience{
-            
+            min-height: 60vh;
             margin-left: 3%;
             
             &__content{
@@ -74,7 +74,8 @@
         margin-top: 1rem;
         
         &__container{
-            
+            padding-top: 1.5rem;
+            padding-bottom: 0;
             padding-left: 0;
 
         }

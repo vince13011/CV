@@ -10,7 +10,7 @@ import './App.scss';
 import Home from './Home';
 import CategoryPage from './CategoryPage';
 import QualificationPage from './QualificationPage';
-import ExperiencePage from './ExperiencePage';
+import SwitchPage from './SwitchPage';
 import getAssetsByCategory from '../selectors/getAssetsByCategory';
 //axios
 import requestApi from '../axios/requestApi';
@@ -22,6 +22,18 @@ const App = () => {
   const [categories, setCategories] = useState([]);
   const [experiences, setExperiences] = useState([]);
   const [qualifications, setQualifications] = useState([]);
+  const [showMenu, setShowMenu] = useState(false);
+  const [index, setIndex] = useState(1);
+  
+  const clickMenu = () => {
+      if (!showMenu) {
+          setShowMenu(true)
+      }
+      else {
+          setShowMenu(false)
+      }
+  }
+  
 
   useEffect(() => {
     return(
@@ -41,12 +53,12 @@ const App = () => {
           exact
           path="/">
           <Home assets={assets} categories={categories}
-            experiences={experiences} qualifications={qualifications}/>
+            experiences={experiences} qualifications={qualifications} clickMenu={clickMenu} index={index} setIndex={setIndex} showMenu={showMenu} />
         </Route>
         <Route
           exact
-          path="/categories/experiences">
-          <ExperiencePage categories={categories} experiences={experiences} />
+          path="/switch">
+          <SwitchPage categories={categories}  clickMenu={clickMenu} showMenu={showMenu} />
         </Route>
 
         <Route

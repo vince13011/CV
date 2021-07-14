@@ -56,6 +56,22 @@
     }
   }
 
+  @keyframes scale-up-ver-top {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+  
+
 @media screen and (max-width:700px) {
     .content{
        
@@ -71,6 +87,10 @@
         position: absolute;
         background-color:vars.$primary-color;
         margin-top: 330%;
+        animation: scale-up-ver-top 1s ease-in-out both;
+    }
+    .loading{
+        width:100%;
     }
 
     .show-menu{
@@ -85,8 +105,9 @@
         color: vars.$primary-color;
         margin-top: -3rem;
         
-    
     }
+
+
 
     .burger-menu{
         width: 100%;

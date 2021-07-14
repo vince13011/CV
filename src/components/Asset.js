@@ -1,20 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Asset.scss';
 import PropTypes from 'prop-types';
 
 
 const Asset = ({ assets, category }) => {
     return (
-        <Link className="asset" to={`/categories/${category.name}`}>
+        <div className="asset" to={`/categories/${category.name}`}>
             <ul className="asset__container">
 
                 {assets.map((asset) =>
                     <li key={asset.id} className="asset__content">{asset.name}</li>
                 )}
             </ul>
-
-        </Link>
+        </div>
     )
 }
 

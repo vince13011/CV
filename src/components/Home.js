@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Home.scss';
 import PropTypes from 'prop-types';
 import { VscLoading } from 'react-icons/vsc';
@@ -17,18 +17,8 @@ import Contact from './Contact';
 import getAssetsByCategory from '../selectors/getAssetsByCategory';
 
 
-const Home = ({ categories, assets, experiences, qualifications }) => {
-    const [showMenu, setShowMenu] = useState(false);
+const Home = ({ categories, assets, experiences, qualifications,clickMenu,index,setIndex,showMenu }) => {
 
-    const clickMenu = () => {
-        if (!showMenu) {
-            setShowMenu(true)
-        }
-        else {
-            setShowMenu(false)
-        }
-    }
-    const [index, setIndex] = useState(1);
 
     return (
         <>

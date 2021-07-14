@@ -31,7 +31,7 @@ const SwitchPage = ({ categories, clickMenu, showMenu }) => {
             </nav>
             <main className="content">
                 <div className="article" >
-                    <h3 className="article__title">Switch<br/> Un template<br/> e-commerce</h3>
+                    <h3 className="article__title">Switch Un template<br/> e-commerce</h3>
                     <div className="article__container">
                     <img className="article__image" src={switchPicture} alt="app switch" />
                         <p className="article__content">Switch est un projet qui est né suite à l'achêvement de ma formation développeur web full stack JS au sein de l'école O'clock.

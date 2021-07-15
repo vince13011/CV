@@ -33,10 +33,14 @@ const App = () => {
           setShowMenu(false)
       }
   }
-  
+  /*function myFunction() {
+     setTimeout(requestApi.getCategories(setCategories), 30000);
+  }
+  */
 
   useEffect(() => {
     return(
+      //myFunction,
       requestApi.getCategories(setCategories),
       requestApi.getAsset(setAssets),
       requestApi.getExperiences(setExperiences),

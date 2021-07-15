@@ -38,7 +38,7 @@ const SwitchPage = ({ categories, clickMenu, showMenu }) => {
                             Trois étudiants et moi-même avons imaginé ce template en pleine période de Covid et de confinement où les petits commerces ont eu besoin de se tourner vers des solutions digitales pour survivre.
                         </p>
                         <p className="article__content">
-                            Lors de ce projet j'ai participé à la conception Front end et back end. Par la suite j'ai pris le rôle de lead dev back-end et mis en place notre API Node.js et la base de données PostgreSQL. J'ai ensuite accompagné partiellement le reste de l'équipe front end pour la fin du projet.
+                            Lors de ce projet j'ai participé à la conception Front end et back end. Par la suite j'ai pris le rôle de lead dev back end et mis en place notre API Node.js et la base de données PostgreSQL. J'ai ensuite accompagné partiellement le reste de l'équipe front end pour la fin du projet.
                         </p>
                         <p className="article__content">
                             Pour plus d'information concernant ce projet, vous pouvez retrouver <a className="article__content__link" href="https://drive.google.com/file/d/12wZ0oKsq9sLk8ld7S4VJCNNe1N0l89WJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">le lien du projet</a> sur google drive. Vous pouvez également visiter <a className="article__content__link" href="https://switch-ecommerce.netlify.app/" target="_blank" rel="noopener noreferrer">le site démo </a>totalement responsive réalisé avec notre template.(Chargement des articles assez long dans sa V1)<br/>
